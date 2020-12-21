@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <!-- Title non fourni ? à valider -->
     <title>RESERVIA</title>
 </head>
-<body>
 
+<div id=page>
+
+    <div id=top>
     <header>
         <a href="#"><img src="images/Reservialogo.png" alt="logo Reservia"></a>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -15,13 +18,13 @@
     </header>
     
     <nav>
-        <ul>
+        <ul id=menu>
             <li><a href="#">Hébergements</a></li>
             <li><a href="#">Activités</a></li>
             <li><a href="#">S'inscrire</a></li>
         </ul>
     </nav>
-
+</div>
     <section>
         <input type="search" id="site-search" name="q" aria-label="Search through site content"> <button>Rechercher</button>
         <h2>Filtres</h2>
@@ -35,7 +38,9 @@
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
     
-    <section>
+   
+    <section id=hebergements>
+        <section id=hbergementsprincipaux>
         <h2>Hébergements à Marseille</h2>
         <ul>
             <!-- Vérifier les prix en gras ou non -->
@@ -48,7 +53,8 @@
             <li><a href="#"><img src="images/hebergements/hotelchezamina.jpg" alt ="Hotel chez Amina"><h3>Hôtel chez Amina</h3><p> Nuit à partir de <strong>96€</strong></p></a></li>
         </ul>
             <p><strong>Afficher plus</strong></p>    <!-- Intégrer fonctionnalité Load More -->
-        <aside>
+        </section>
+            <aside id=populaires>
             <h2>Les plus populaires</h2>
             <ul>
             <!-- Vérifier les prix en gras ou non -->
@@ -74,25 +80,31 @@
         </ul>
     </section>
 
-    <footer>
+    <footer id=footer>
+        <div id=apropos>
         <h2>À propos</h2><!-- Accent rajouté sur le A, manquant dans la maquette -->
         <ul>
             <li><a href="#">Fonctionnement du site</a></li>
             <li><a href="#">Conditions générales de vente</a></li>
             <li><a href="#">Données et confidentialité</a></li>
         </ul>
+    </div>
+    <div id=noshebergements>
         <h2>Nos hébergements</h2>
         <ul>
             <li><a href="#">Charte qualité</a></li>
             <li><a href="#">Soumettre votre hôtel</a></li>
         </ul>
+    </div>
+    <div id= assistance>
         <h2>Assistance</h2>
         <ul>
             <li><a href="#">Centre d'aide</a></li>
             <li><a href="#">Nous contacter</a></li>
         </ul>
+    </div>
     </footer>
+</div>
 
 
-</body>
 </html>
