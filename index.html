@@ -1,400 +1,443 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7c1a4ed08f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/ico" href="icones/favicon.ico" />
+    <title>Reservia</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
-  <script src="https://kit.fontawesome.com/7c1a4ed08f.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" type="image/ico" href="icones/favicon.ico" />
-  <title>Reservia</title>
-</head>
+  <body>
+    <!-- NAV -->
 
-<body>
-
-
-  <!-- HEADER -->
-
-  <nav class="nav">
-      <img a href="#"class="logo" src="images/Reservialogo.png"
+    <nav class="nav">
+      <ul class="menu">
+        <li class="logo_container">
+        <img
+        class="logo"
+        src="images/Reservialogo.png"
         alt="Page d'accueil de Reservia, site de réservation de logements et d'activités"
-      >
-    <ul class="menu">
-      <li><a class="menu_navigation" href="#hebergements_all">Hébergements</a></li>
-      <li><a class="menu_navigation" href="#activites">Activités</a></li>
-      <li><a class="menu_signin" href="#">S'inscrire</a></li>
-    </ul>
-  </nav>
-
-  <header class="header">
-
-    <h1>
-      Trouvez votre hébergement pour des vacances de rêve
-    </h1>
-
-    <p>
-      En plein centre de ville ou en pleine nature
-    </p>
-    
-    <form method="post" action="">
-      <i class="fas fa-map-marker-alt"></i>
-      <input class="field" type="search" required placeholder="Marseille, France">
-      <button class="button_form" type="button" value="Rechercher">Rechercher</button>
-    </form>
-
-  </header>
-
-
-
-  <!-- FILTRES -->
-
-
-
-  <div class="filter_feature">
-    <h3>Filtres</h3>
-    <button class="button" type="button" value="Economique">
-      <i class="fas fa-money-bill-wave-alt"></i>Economique
-    </button>
-    <button class="button" type="button" value="Familial">
-      <i class="fas fa-child"></i>Familial
-    </button>
-    <button class="button" type="button" value="Romantique">
-      <i class="fas fa-heart"></i>Romantique
-    </button>
-    <button class="button" type="button" value="Animaux autorisés">
-      <i class="fas fa-dog"></i>Animaux autorisés
-    </button>
-  </div>
-
-  <p class="Recherche_texte"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-
-
-
-
-  <!-- HEBERGEMENTS-->
-
-  <div id="hebergements_all" class="hebergements_all">
-
-    <section class="hebergements">
-
-      <header class="hebergements_header">
-        <h2>Hébergements à Marseille</h2>
-      </header>
-
-
-      <div class="hebergements_card">
-        <a href="#">
-          <div class="hebergements_image_container">
-            <img class="hebergements_image" src="images/hebergements/aubergelacannebiere.jpg"
-              alt="L'Auberge La Cannebière, située à Marseille, propose des lits en dortoirs. Effectuez directement votre réservation sur Reservia." />
-          </div>
-          <div class="hebergements_descriptions">
-            <p><strong>Auberge de la Cannebière</strong></p>
-            <p>Nuit à partir de <strong>25€</strong></p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </a>
-      </div>
-
-
-
-      <div class="hebergements_card">
-        <a href="#">
-          <div class="hebergements_image_container">
-            <img class="hebergements_image" src="images/hebergements/hotelduport.jpg"
-              alt="L'Hôtel du Port, situé à Marseille, propose de belles chambres à la décoration épurée. Effectuez directement votre réservation sur Reservia." />
-          </div>
-          <div class="hebergements_descriptions">
-            <p><strong>Hôtel du port</strong></p>
-            <p>Nuit à partir de <strong>52€</strong></p>
-
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </a>
-      </div>
-
-
-
-      <div class="hebergements_card">
-        <a href="#">
-          <div class="hebergements_image_container">
-            <img class="hebergements_image" src="images/hebergements/hotellesmouettes.jpg"
-              alt="L'hôtel Les Mouettes, situé à Marseille, propose des chambres à la décoration classique. Effectuez directement votre réservation sur Reservia." />
-          </div>
-          <div class="hebergements_descriptions">
-            <p><strong>Hôtel Les mouettes</strong></p>
-            <p>Nuit à partir de <strong>76€</strong></p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </a>
-      </div>
-
-
-
-
-      <div class="hebergements_card">
-        <a href="#">
-          <div class="hebergements_image_container">
-            <img class="hebergements_image" src="images/hebergements/hoteldelamer.jpg"
-              alt="Lhôtel de la Mer, situé à Marseille, propose des chambres à la décoration épurée. Effectuez directement votre réservation sur Reservia. " />
-          </div>
-          <div class="hebergements_descriptions">
-            <p><strong>Hôtel de la mer</strong></p>
-            <p>Nuit à partir de <strong>46€</strong></p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </a>
-      </div>
-
-
-      <div class="hebergements_card">
-        <a href="#">
-          <div class="hebergements_image_container">
-            <img class="hebergements_image" src="images/hebergements/aubergelepanier.jpg"
-              alt="L'Auberge Le Panier, située à Marseille, propose des lits en dortoir. Effectuez directement votre réservation sur Reservia." />
-          </div>
-          <div class="hebergements_descriptions">
-            <p><strong>Auberge Le Panier</strong></p>
-            <p>Nuit à partir de <strong>23€</strong></p>
-
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </a>
-      </div>
-
-
+          />
      
-      <div class="hebergements_card">
-        <a href="#">
-          <div class="hebergements_image_container">
-            <img class="hebergements_image" src="images/hebergements/hotelchezamina.jpg"
-              alt="L'hôtel chez Amina, situé à Marseille, propose des chambres à la décoration classique. Effectuez directement votre réservation sur Reservia." />
-          </div>
-          <div class="hebergements_descriptions">
-            <p><strong>Hôtel chez Amina</strong></p>
-            <p>Nuit à partir de <strong>96€</strong></p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </a>
-      </div>
-  
+        </li>
+        <li class="menu_navigation_hebergements_container">
+          <a class="menu_navigation_hebergements" href="#hebergements_all">Hébergements </a>
+        </li>
+        <li class="menu_navigation_activites_container">
+          <a class="menu_navigation_activites" href="#activites">Activités </a>
+        </li>
+        <li class="menu_signin_container">
+          <a class="menu_signin" href="#">S'inscrire </a>
+        </li>
+      </ul>
+    </nav>
 
-      <footer class="hebergements_footer">
-        <a href="#">
-          <p><strong>Afficher plus</strong></p>
-        </a>
-      </footer>
+    <!-- HEADER -->
 
-    </section>
-
-
-
-    <!-- Hébergements populaires -->
-
-    <aside class="hebergements_populaires">
-
-      <header class="hegergements_populaire_header">
-        <h2>Les plus populaires</h2>
-        <i class="fas fa-chart-line"></i>
-      </header>
-
-      <a href="">
-      <div class="hebergements_populaires_card">
-        
-          <div class="hebergements_populaires_image_container">
-            <img class="hebergements_populaires_image" src="images/hebergements/hotellesoleildumatin.jpg"
-              alt="L'Hôtel Le soleil du Matin, situé à Marseille" />
-          </div>
-          <div class="hebergements_populaires_descriptions">
-            <p><strong>Hôtel Le soleil du matin</strong></p>
-            <p>Nuit à partir de <strong>128€</strong></p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-      </div>
-    </a>
-
-      <a href="">
-      <div class="hebergements_populaires_card">
-          <div class="hebergements_populaires_image_container">
-            <img class="hebergements_populaires_image" src="images/hebergements/hotelaucoeurdeleau.jpg"
-              alt="Les Chambres d'hôtes au coeur de l'eau, situées à Marseille, propose des hébergements à la décoration moderne et élégante. Effectuez directement votre réservation sur Reservia." />
-          </div>
-          <div class="hebergements_populaires_descriptions">
-            <p><strong>Au cœur de l'eau Chambres</strong>
-            </p>
-            <p>Nuit à partir de <strong>71€</strong>
-            </p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-      </div>
-    </a>
-
-    <a href="">
-      <div class="hebergements_populaires_card">
-        
-          <div class="hebergements_populaires_image_container">
-            <img class="hebergements_populaires_image" src="images/hebergements/hoteltoutbleuetblanc.jpg"
-              alt="L'hôtel Tout Bleu et Blanc, situé à Marseille, propose des chambres à la décoration classique. Effectuez directement votre réservation sur Reservia." />
-          </div>
-          <div class="hebergements_populaires_descriptions">
-            <p><strong>Hôtel Tout bleu et Blanc</strong>
-            </p>
-            <p>Nuit à partir de <strong>68€</strong>
-            </p>
-            <i class="fas fa-star">
-            </i>
-            <i class="fas fa-star">
-            </i>
-            <i class="fas fa-star">
-            </i>
-            <i class="fas fa-star">
-            </i>
-            <i class="far fa-star">
-            </i>
-          </div>
-      </div>
-    </a>
-  </aside>
-
-  </div>
-  <!-- Activités -->
-  <section id="activites" class="activites">
-
-    <header class="activites_header">
-      <h2>Activités à Marseille</h2>
+    <header class="header">
+      <h1 class="header_titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p class="header_texte">En plein centre ville ou en pleine nature</p>
+      <form class="form" method="post">
+        <i class="fas fa-map-marker-alt"> </i>
+        <input
+          class="field"
+          type="search"
+          required
+          placeholder="Marseille, France"
+        />
+        <button class="button_form" type="button" value="Rechercher">
+          Rechercher
+        </button>
+        <button  class="button_form_icon" type="button" value="Rechercher">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
     </header>
 
+    <!-- FILTRES -->
 
-    <div class="activites_list">
+    <div class="filter_feature">
+      <h3 class="filter_feature_title">Filtres</h3>
+      <button class="button" type="button" value="Economique">
+        <i class="fas fa-money-bill-wave-alt"> </i>Économique
+      </button>
+      <button class="button" type="button" value="Familial">
+        <i class="fas fa-child"> </i>Familial
+      </button>
+      <button class="button" type="button" value="Romantique">
+        <i class="fas fa-heart"> </i>Romantique
+      </button>
+      <button class="button" type="button" value="Animaux autorisés">
+        <i class="fas fa-dog"> </i>Animaux autorisés
+      </button>
+    </div>
 
+    <div class="recherche_texte">
+      <i class="fas fa-info"> </i>
+      <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
 
-     
-      <div class="activite_figure_style1">
-        <img class="figure_image" src="images/activites/marseille_vieuxport.jpg"
-            alt="Le Vieux-Port de Marseille est l’un des symboles de la ville, situé en bas de la fameuse Canebière. Réservez cette activité dur Reservia." />
-          <p class="activite_figure_description"><strong>Vieux Port</strong></p>
-      </div>
+    <!-- HEBERGEMENTS-->
+
+    <div id="hebergements_all" class="hebergements_all">
+      <section class="hebergements">
+        <header class="hebergements_header">
+          <h2 class=hebergements_header_titre>Hébergements à Marseille</h2>
+        </header>
+
  
+        <div class="hebergements_card">
+          <a href="">
+            <div class="hebergements_image_container">
+              <img
+                class="hebergements_image"
+                src="images/hebergements/aubergelacannebiere.jpg"
+                alt="L'Auberge La Cannebière, située à Marseille, propose des lits en dortoirs. Effectuez directement votre réservation sur Reservia."
+              />
+            </div>
+            <div class="hebergements_descriptions">
+              <p class="hebergements_descriptions_texte"><strong>Auberge la Cannebière</strong></p>
+              <p class="hebergements_descriptions_texte_prix">Nuit à partir de <strong>25€</strong></p>
+              <div>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star none"> </i>
+              </div>
+            </div>
+          </a>
+        </div>
+     
 
-      <div class="activite_figure_style2">
-        <img class="figure_image" src="images/activites/marseille_fortdepomegues.jpg"
-            alt="Erigé à la fin 19ème siècle le Fort de Pomègues domine le nord de l’île de Pomègues, à 87 mètres d’altitude. Il s’agit du point culminant de l’archipel du Frioul. Réservez cette activité sur Reservia" />
-          <p class="activite_figure_description"><strong>Fort de Pomègues</strong></p>
-      </div>
-
-
-
-
-      <div class="activite_figure_style3">
-    <img class="figure_image" src="images/activites/marseille_iledufrioul.jpg"
-            alt="Dressé face à Marseille, l’archipel du Frioul est composé de quatre îles : Pomègues, Ratonneau, Tiboulen et If. Réservez cette activité sur Reservia" />
-          <p class="activite_figure_description"><strong>Îles du Frioul</strong>
-          </p>
+        <div class="hebergements_card">
+          <a href="#">
+            <div class="hebergements_image_container">
+              <img
+                class="hebergements_image"
+                src="images/hebergements/hotelduport.jpg"
+                alt="L'Hôtel du Port, situé à Marseille, propose de belles chambres à la décoration épurée. Effectuez directement votre réservation sur Reservia."
+              />
+            </div>
+            <div class="hebergements_descriptions">
+              <p class="hebergements_descriptions_texte"><strong>Hôtel du port</strong></p>
+              <p class="hebergements_descriptions_texte_prix">Nuit à partir de <strong>52€</strong></p>
+              <div>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+            </div>
+            </div>
+          </a>
         </div>
 
+        <div class="hebergements_card">
+          <a href="#">
+            <div class="hebergements_image_container">
+              <img
+                class="hebergements_image"
+                src="images/hebergements/hotellesmouettes.jpg"
+                alt="L'hôtel Les Mouettes, situé à Marseille, propose des chambres à la décoration classique. Effectuez directement votre réservation sur Reservia."
+              />
+            </div>
+            <div class="hebergements_descriptions">
+              <p class="hebergements_descriptions_texte"><strong>Hôtel Les mouettes</strong></p>
+              <p class="hebergements_descriptions_texte_prix">Nuit à partir de <strong>76€</strong></p>
+              <div>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="far fa-star"> </i>
+            </div>
+            </div>
+          </a>
+        </div>
 
-      <div class="activite_figure_style1">
-      <img class="figure_image" src="images/activites/marseille_calanques.jpg"
-            alt="Le massif des Calanques est une merveille de la nature nichée entre Marseille et Cassis. Ce paysage exceptionnel et unique est un incontournable à Marseille ! Réservez cette acrivité sur Reservia" />
+        <div class="hebergements_card">
+          <a href="#">
+            <div class="hebergements_image_container">
+              <img
+                class="hebergements_image"
+                src="images/hebergements/hoteldelamer.jpg"
+                alt="Lhôtel de la Mer, situé à Marseille, propose des chambres à la décoration épurée. Effectuez directement votre réservation sur Reservia. "
+              />
+            </div>
+            <div class="hebergements_descriptions">
+              <p class="hebergements_descriptions_texte"><strong>Hôtel de la mer</strong></p>
+              <p class="hebergements_descriptions_texte_prix">Nuit à partir de <strong>46€</strong></p>
+              <div>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="far fa-star"> </i>
+              <i class="far fa-star"> </i>
+            </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="hebergements_card">
+          <a href="#">
+            <div class="hebergements_image_container">
+              <img
+                class="hebergements_image"
+                src="images/hebergements/aubergelepanier.jpg"
+                alt="L'Auberge Le Panier, située à Marseille, propose des lits en dortoir. Effectuez directement votre réservation sur Reservia."
+              />
+            </div>
+            <div class="hebergements_descriptions">
+              <p class="hebergements_descriptions_texte"><strong>Auberge Le Panier</strong></p>
+              <p class="hebergements_descriptions_texte_prix">Nuit à partir de <strong>23€</strong></p>
+              <div>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="far fa-star"> </i>
+            </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="hebergements_card">
+          <a href="#">
+            <div class="hebergements_image_container">
+              <img
+                class="hebergements_image"
+                src="images/hebergements/hotelchezamina.jpg"
+                alt="L'hôtel chez Amina, situé à Marseille, propose des chambres à la décoration classique. Effectuez directement votre réservation sur Reservia."
+              />
+            </div>
+            <div class="hebergements_descriptions">
+              <p class="hebergements_descriptions_texte"><strong>Hôtel chez Amina</strong></p>
+              <p class="hebergements_descriptions_texte_prix">Nuit à partir de <strong>96€</strong></p>
+              <div>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+                <i class="fas fa-star"> </i>
+              </div>  
+            </div>
+          </a>
+        </div>
+
+        <footer class="hebergements_footer">
+          <a href="#">
+            <p class=hebergements_footer_texte><strong>Afficher plus</strong></p>
+          </a>
+        </footer>
+      </section>
+
+      <!-- Hébergements populaires -->
+
+      <aside class="hebergements_populaires">
+        <header class="hebergements_populaires_header">
+          <h2>Les plus populaires</h2>
+          <i class="fas fa-chart-line"> </i>
+        </header>
+
+        <a href="#">
+          <div class="hebergements_populaires_card" >
+            
+            <div class="hebergements_populaires_image_container">
+              <img
+                class="hebergements_populaires_image"
+                src="images/hebergements/hotellesoleildumatin.jpg"
+                alt="L'Hôtel Le soleil du Matin, situé à Marseille"
+              />
+            </div>
+            <div class="hebergements_populaires_descriptions">
+              <p class="hebergements_populaires_descriptions_texte"><strong>Hôtel Le soleil du matin</strong></p>
+              <p class="hebergements_populaires_descriptions_texte_prix">Nuit à partir de <strong>128€</strong></p>
+              <div class="hebergements_populaires_descriptions_texte_prix_star">
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+            </div>
+            </div>
+          </div>
+        </a>
+
+          <a href="#">
+          <div class="hebergements_populaires_card">
+          
+            <div class="hebergements_populaires_image_container">
+              <img
+                class="hebergements_populaires_image"
+                src="images/hebergements/hotelaucoeurdeleau.jpg"
+                alt="Les Chambres d'hôtes au coeur de l'eau, situées à Marseille, propose des hébergements à la décoration moderne et élégante. Effectuez directement votre réservation sur Reservia."
+              />
+            </div>
+            <div class="hebergements_populaires_descriptions">
+              <p class="hebergements_populaires_descriptions_texte"><strong>Au cœur de l'eau Chambres d'hôtes</strong></p>
+              <p class="hebergements_populaires_descriptions_texte_prix">Nuit à partir de <strong>71€</strong></p>
+              <div class="hebergements_populaires_descriptions_texte_prix_star">
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="far fa-star"> </i>
+            </div>
+            </div>
+         
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="hebergements_populaires_card">
+            
+            <div class="hebergements_populaires_image_container">
+              <img
+                class="hebergements_populaires_image"
+                src="images/hebergements/hoteltoutbleuetblanc.jpg"
+                alt="L'hôtel Tout Bleu et Blanc, situé à Marseille, propose des chambres à la décoration classique. Effectuez directement votre réservation sur Reservia."
+              />
+            </div>
+            <div class="hebergements_populaires_descriptions">
+              <p class="hebergements_populaires_descriptions_texte"><strong>Hôtel Tout bleu et Blanc</strong></p>
+              <p class="hebergements_populaires_descriptions_texte_prix">Nuit à partir de <strong>68€</strong></p>
+              <div class="hebergements_populaires_descriptions_texte_prix_star">
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="fas fa-star"> </i>
+              <i class="far fa-star"> </i>
+            </div>
+            </div>
+          
+          </div>
+        </a>
+      </aside>
+    </div>
+
+    <!-- Activités -->
+
+    <section id="activites" class="activites">
+      <header class="activites_header">
+        <h2>Activités à Marseille</h2>
+      </header>
+
+      <div class="activites_list">
+
+
+      
+        <div class="activite_figure_style1">
+          <a href="#">
+          <img
+            class="figure_image"
+            src="images/activites/marseille_vieuxport.jpg"
+            alt="Le Vieux-Port de Marseille est l’un des symboles de la ville, situé en bas de la fameuse Canebière. Réservez cette activité dur Reservia."
+          />
+          <p class="activite_figure_description"><strong>Vieux Port</strong></p>
+        </a>
+        </div>
+     
+
+        <div class="activite_figure_style2">
+          <a href="#">
+          <img
+            class="figure_image"
+            src="images/activites/marseille_fortdepomegues.jpg"
+            alt="Erigé à la fin 19ème siècle le Fort de Pomègues domine le nord de l’île de Pomègues, à 87 mètres d’altitude. Il s’agit du point culminant de l’archipel du Frioul. Réservez cette activité sur Reservia"
+          />
+          <p class="activite_figure_description">
+            <strong>Fort de Pomègues</strong>
+          </p>
+        </a>
+        </div>
+
+        <div class="activite_figure_style3">
+          <a href="#">
+          <img
+            class="figure_image"
+            src="images/activites/marseille_iledufrioul.jpg"
+            alt="Dressé face à Marseille, l’archipel du Frioul est composé de quatre îles : Pomègues, Ratonneau, Tiboulen et If. Réservez cette activité sur Reservia"
+          />
+          <p class="activite_figure_description">
+            <strong>Îles du Frioul</strong>
+          </p>
+        </a>
+        </div>
+
+        <div class="activite_figure_style1">
+          <a href="#">
+          <img
+            class="figure_image"
+            src="images/activites/marseille_calanques.jpg"
+            alt="Le massif des Calanques est une merveille de la nature nichée entre Marseille et Cassis. Ce paysage exceptionnel et unique est un incontournable à Marseille ! Réservez cette acrivité sur Reservia"
+          />
           <p class="activite_figure_description">
             <strong>Parc National des Calanques</strong>
           </p>
+        </a>
         </div>
 
-
-
-      <div class="activite_figure_style3">
-    <img class="figure_image" src="images/activites/marseille_notredamedelagarde.jpg"
-            alt="Figure emblématique de la Ville de Marseille, la basilique Notre-Dame de la Garde veille sur les marins, les pêcheurs et tous les Marseillais. Réservez cette activité sur Reservia" />
-          <p class="activite_figure_description"><strong>Notre-Dame de la Garde</strong>
+        <div class="activite_figure_style3">
+          <a href="#">
+          <img
+            class="figure_image"
+            src="images/activites/marseille_notredamedelagarde.jpg"
+            alt="Figure emblématique de la Ville de Marseille, la basilique Notre-Dame de la Garde veille sur les marins, les pêcheurs et tous les Marseillais. Réservez cette activité sur Reservia"
+          />
+          <p class="activite_figure_description">
+            <strong>Notre-Dame de la Garde</strong>
           </p>
+        </a>
         </div>
 
-
-
-      <div class="activite_figure_style2">
-     <img class="figure_image" src="images/activites/marseille_parclongchamp.jpg"
-            alt="Le Parc Longchamp est un parc majestueux situé en plein cœur de Marseille et ne laisse personne indifférent. Il est composé de huit d’hectares d’espaces verts, de musées d'une architecture somptueuse. Réservez cette activité sur Reservia" />
-          <p class="activite_figure_description"><strong>Parc Longchamp</strong>
+        <div class="activite_figure_style2">
+          <a href="#">
+          <img
+            class="figure_image"
+            src="images/activites/marseille_parclongchamp.jpg"
+            alt="Le Parc Longchamp est un parc majestueux situé en plein cœur de Marseille et ne laisse personne indifférent. Il est composé de huit d’hectares d’espaces verts, de musées d'une architecture somptueuse. Réservez cette activité sur Reservia"
+          />
+          <p class="activite_figure_description">
+            <strong>Parc Longchamp</strong>
           </p>
+        </a>
         </div>
+      </div>
+    </section>
 
+    <!-- Footer -->
 
-    </div>
+    <footer class="footer">
+      <div>
+        <ul>
+          <li><h3 class=footer_section_title>À propos</h3></li>
+          <li><a class="footer_link" href="#">Fonctionnement du site</a></li>
+          <li><a class="footer_link" href="#">Conditions générales de vente</a></li>
+          <li><a class="footer_link" href="#">Données et confidentialité</a></li>
+        </ul>
+      </div>
 
-  </section>
+      <div>
+        <ul>
+          <li><h3 class=footer_section_title>Nos hébergements</h3></li>
+          <li><a class="footer_link" href="#">Charte qualité</a></li>
+          <li><a class="footer_link" href="#">Soumettre votre hôtel</a></li>
+        </ul>
+      </div>
 
-
-  <!-- Footer -->
-
-  <footer class="footer">
-
-    <div>
-
-      <ul>
-        <li>
-          <h3>À propos</h3>
-        </li>
-        <li><a class="footer_link" href="#">Fonctionnement du site</a></li>
-        <li><a class="footer_link" href="#">Conditions générales de vente</a></li>
-        <li><a class="footer_link" href="#">Données et confidentialité</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <ul>
-        <li>
-          <h3>Nos hébergements</h3>
-        </li>
-        <li><a class="footer_link" href="#">Charte qualité</a></li>
-        <li><a class="footer_link" href="#">Soumettre votre hôtel</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <ul>
-        <li>
-          <h3>Assistance</h3>
-        </li>
-        <li><a class="footer_link" href="#">Centre d'aide</a></li>
-        <li><a class="footer_link" href="#">Nous contacter</a></li>
-      </ul>
-    </div>
-
-  </footer>
-
-</body>
-
+      <div>
+        <ul>
+          <li><h3 class=footer_section_title>Assistance</h3></li>
+          <li><a class="footer_link" href="#">Centre d'aide</a></li>
+          <li><a class="footer_link" href="#">Nous contacter</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
