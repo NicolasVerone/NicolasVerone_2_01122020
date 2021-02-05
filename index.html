@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+  <!-- HEAD -->
+
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Reservia, portail de reservation d'herbegements et d'activités en plein centre-ville ou en pleine nature"
+    />
+    <meta
+      name="keywords"
+      content="Reservia, reservation, hebergements, activites, ville, nature"
+    />
+    <meta name="author" content="Reservia" />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <script
       src="https://kit.fontawesome.com/7c1a4ed08f.js"
@@ -12,24 +27,28 @@
     <title>Reservia</title>
   </head>
 
+   <!-- BODY START-->
+
   <body>
-    <!-- NAV -->
+
+    <!-- NAVIGATION -->
 
     <nav class="nav">
       <ul class="menu">
         <li class="logo_container">
-        <img
-        class="logo"
-        src="images/Reservialogo.png"
-        alt="Page d'accueil de Reservia, site de réservation de logements et d'activités"
+          <img
+            class="logo"
+            src="images/Reservialogo.png"
+            alt="Page d'accueil de Reservia, site de réservation de logements et d'activités"
           />
-     
         </li>
         <li class="menu_navigation_hebergements_container">
-          <a class="menu_navigation_hebergements" href="#hebergements_all">Hébergements </a>
+          <a class="menu_navigation_hebergements" href="#hebergements_all"
+            >Hébergements
+          </a>
         </li>
         <li class="menu_navigation_activites_container">
-          <a class="menu_navigation_activites" href="#activites">Activités </a>
+          <a class="menu_navigation_activites" href="#activites">Activités</a>
         </li>
         <li class="menu_signin_container">
           <a class="menu_signin" href="">S'inscrire </a>
@@ -40,10 +59,15 @@
     <!-- HEADER -->
 
     <header class="header">
-      <h1 class="header_titre">Trouvez votre hébergement pour des vacances de rêve</h1>
-      <p class="header_texte">En plein centre ville ou en pleine nature</p>
+      <h1 class="header_titre">
+        Trouvez votre hébergement pour des vacances de rêve
+      </h1>
+      <p class="header_texte">En plein centre ville ou en pleine nature
+
+      </p>
       <form class="form" method="post">
-        <i class="fas fa-map-marker-alt"> </i>
+        <i class="fas fa-map-marker-alt">
+        </i>
         <input
           class="field"
           type="search"
@@ -53,7 +77,7 @@
         <button class="button_form" type="button" value="Rechercher">
           Rechercher
         </button>
-        <button  class="button_form_icon" type="button" value="Rechercher">
+        <button class="button_form_icon" type="button" value="Rechercher">
           <i class="fas fa-search"></i>
         </button>
       </form>
@@ -62,7 +86,8 @@
     <!-- FILTRES -->
 
     <div class="filter_feature">
-      <h3 class="filter_feature_title">Filtres</h3>
+      <h3 class="filter_feature_title">Filtres
+      </h3>
       <button class="button" type="button" value="Economique">
         <i class="fas fa-money-bill-wave-alt"> </i>Économique
       </button>
@@ -79,18 +104,22 @@
 
     <div class="recherche_texte">
       <i class="fas fa-info"> </i>
-      <p> Plus de 500 logements sont disponibles dans cette ville</p>
+      <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
 
-    <!-- HEBERGEMENTS-->
+    <!-- HEBERGEMENTS ALL-->
 
     <div id="hebergements_all" class="hebergements_all">
+
+       <!-- HEBERGEMENTS-->
+
       <section class="hebergements">
+
         <header class="hebergements_header">
-          <h2 class=hebergements_header_titre>Hébergements à Marseille</h2>
+          <h2 class="hebergements_header_titre">Hébergements à Marseille
+          </h2>
         </header>
 
- 
         <div class="hebergements_card">
           <a href="#" class="hebergements_link">
             <div class="hebergements_image_container">
@@ -101,8 +130,12 @@
               />
             </div>
             <div class="hebergements_descriptions">
-              <p class="hebergements_descriptions_texte"><strong>Auberge la Cannebière</strong></p>
-              <p class="hebergements_descriptions_texte_prix">Nuit à partir de <strong>25€</strong></p>
+              <p class="hebergements_descriptions_texte">
+                <strong>Auberge la Cannebière</strong>
+              </p>
+              <p class="hebergements_descriptions_texte_prix">
+                Nuit à partir de <strong>25€</strong>
+              </p>
               <div>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
@@ -113,7 +146,6 @@
             </div>
           </a>
         </div>
-     
 
         <div class="hebergements_card">
           <a href="#" class="hebergements_link">
@@ -125,15 +157,19 @@
               />
             </div>
             <div class="hebergements_descriptions">
-              <p class="hebergements_descriptions_texte"><strong>Hôtel du port</strong></p>
-              <p class="hebergements_descriptions_texte_prix">Nuit à partir de <strong>52€</strong></p>
+              <p class="hebergements_descriptions_texte">
+                <strong>Hôtel du port</strong>
+              </p>
+              <p class="hebergements_descriptions_texte_prix">
+                Nuit à partir de <strong>52€</strong>
+              </p>
               <div>
-              <i class="fas fa-star yes"> </i>
-              <i class="fas fa-star yes"> </i>
-              <i class="fas fa-star yes"> </i>
-              <i class="fas fa-star yes"> </i>
-              <i class="fas fa-star yes"> </i>
-            </div>
+                <i class="fas fa-star yes"> </i>
+                <i class="fas fa-star yes"> </i>
+                <i class="fas fa-star yes"> </i>
+                <i class="fas fa-star yes"> </i>
+                <i class="fas fa-star yes"> </i>
+              </div>
             </div>
           </a>
         </div>
@@ -148,15 +184,19 @@
               />
             </div>
             <div class="hebergements_descriptions">
-              <p class="hebergements_descriptions_texte"><strong>Hôtel Les mouettes</strong></p>
-              <p class="hebergements_descriptions_texte_prix">Nuit à partir de <strong>76€</strong></p>
+              <p class="hebergements_descriptions_texte">
+                <strong>Hôtel Les mouettes</strong>
+              </p>
+              <p class="hebergements_descriptions_texte_prix">
+                Nuit à partir de <strong>76€</strong>
+              </p>
               <div>
-              <i class="fas fa-star yes"> </i>
-              <i class="fas fa-star yes"> </i>
-              <i class="fas fa-star yes"> </i>
-              <i class="fas fa-star yes"> </i>
-              <i class="fas fa-star no"> </i>
-            </div>
+                <i class="fas fa-star yes"> </i>
+                <i class="fas fa-star yes"> </i>
+                <i class="fas fa-star yes"> </i>
+                <i class="fas fa-star yes"> </i>
+                <i class="fas fa-star no"> </i>
+              </div>
             </div>
           </a>
         </div>
@@ -171,15 +211,19 @@
               />
             </div>
             <div class="hebergements_descriptions">
-              <p class="hebergements_descriptions_texte"><strong>Hôtel de la mer</strong></p>
-              <p class="hebergements_descriptions_texte_prix">Nuit à partir de <strong>46€</strong></p>
+              <p class="hebergements_descriptions_texte">
+                <strong>Hôtel de la mer</strong>
+              </p>
+              <p class="hebergements_descriptions_texte_prix">
+                Nuit à partir de <strong>46€</strong>
+              </p>
               <div>
-              <i class="fas fa-star yes"> </i>
-              <i class="fas fa-star yes"> </i>
-              <i class="fas fa-star yes"> </i>
-              <i class="fas fa-star no"> </i>
-              <i class="fas fa-star no"> </i>
-            </div>
+                <i class="fas fa-star yes"> </i>
+                <i class="fas fa-star yes"> </i>
+                <i class="fas fa-star yes"> </i>
+                <i class="fas fa-star no"> </i>
+                <i class="fas fa-star no"> </i>
+              </div>
             </div>
           </a>
         </div>
@@ -194,16 +238,20 @@
               />
             </div>
             <div class="hebergements_descriptions">
-              <p class="hebergements_descriptions_texte"><strong>Auberge Le Panier</strong></p>
-              <p class="hebergements_descriptions_texte_prix">Nuit à partir de <strong>23€</strong></p>
+              <p class="hebergements_descriptions_texte">
+                <strong>Auberge Le Panier</strong>
+              </p>
+              <p class="hebergements_descriptions_texte_prix">
+                Nuit à partir de <strong>23€</strong>
+              </p>
               <div>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star no"> </i>
+              </div>
             </div>
-          </div>
           </a>
         </div>
 
@@ -217,37 +265,44 @@
               />
             </div>
             <div class="hebergements_descriptions">
-              <p class="hebergements_descriptions_texte"><strong>Hôtel chez Amina</strong></p>
-              <p class="hebergements_descriptions_texte_prix">Nuit à partir de <strong>96€</strong></p>
+              <p class="hebergements_descriptions_texte">
+                <strong>Hôtel chez Amina</strong>
+              </p>
+              <p class="hebergements_descriptions_texte_prix">
+                Nuit à partir de <strong>96€</strong>
+              </p>
               <div>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
-              </div>  
+              </div>
             </div>
           </a>
         </div>
 
         <footer class="hebergements_footer">
           <a href="#">
-            <p class=hebergements_footer_texte><strong>Afficher plus</strong></p>
+            <p class="hebergements_footer_texte">
+              <strong>Afficher plus</strong>
+            </p>
           </a>
         </footer>
+
       </section>
 
-      <!-- Hébergements populaires -->
+      <!-- HEBERGEMENTS POPULAIRES -->
 
       <aside class="hebergements_populaires">
+
         <header class="hebergements_populaires_header">
           <h2>Les plus populaires</h2>
           <i class="fas fa-chart-line"> </i>
         </header>
 
         <a href="#">
-          <div class="hebergements_populaires_card" >
-            
+          <div class="hebergements_populaires_card">
             <div class="hebergements_populaires_image_container">
               <img
                 class="hebergements_populaires_image"
@@ -256,24 +311,26 @@
               />
             </div>
             <div class="hebergements_populaires_descriptions">
-           
-              <p class="hebergements_populaires_descriptions_texte"><strong>Hôtel Le soleil du matin</strong></p>
-              <p class="hebergements_populaires_descriptions_texte_prix">Nuit à partir de <strong>128€</strong></p>
-    
+              <p class="hebergements_populaires_descriptions_texte">
+                <strong>Hôtel Le soleil du matin</strong>
+              </p>
+              <p class="hebergements_populaires_descriptions_texte_prix">
+                Nuit à partir de <strong>128€</strong>
+              </p>
+
               <div class="hebergements_populaires_descriptions_texte_prix_star">
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
-            </div>
+              </div>
             </div>
           </div>
         </a>
 
-          <a href="#">
+        <a href="#">
           <div class="hebergements_populaires_card">
-          
             <div class="hebergements_populaires_image_container">
               <img
                 class="hebergements_populaires_image"
@@ -282,23 +339,25 @@
               />
             </div>
             <div class="hebergements_populaires_descriptions">
-              <p class="hebergements_populaires_descriptions_texte"><strong>Au cœur de l'eau Chambres d'hôtes</strong></p>
-              <p class="hebergements_populaires_descriptions_texte_prix">Nuit à partir de <strong>71€</strong></p>
+              <p class="hebergements_populaires_descriptions_texte">
+                <strong>Au cœur de l'eau Chambres d'hôtes</strong>
+              </p>
+              <p class="hebergements_populaires_descriptions_texte_prix">
+                Nuit à partir de <strong>71€</strong>
+              </p>
               <div class="hebergements_populaires_descriptions_texte_prix_star">
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star no"> </i>
+              </div>
             </div>
-            </div>
-         
           </div>
         </a>
 
         <a href="#">
           <div class="hebergements_populaires_card">
-            
             <div class="hebergements_populaires_image_container">
               <img
                 class="hebergements_populaires_image"
@@ -307,121 +366,124 @@
               />
             </div>
             <div class="hebergements_populaires_descriptions">
-              <p class="hebergements_populaires_descriptions_texte"><strong>Hôtel Tout bleu et Blanc</strong></p>
-              <p class="hebergements_populaires_descriptions_texte_prix">Nuit à partir de <strong>68€</strong></p>
+              <p class="hebergements_populaires_descriptions_texte">
+                <strong>Hôtel Tout bleu et Blanc</strong>
+              </p>
+              <p class="hebergements_populaires_descriptions_texte_prix">
+                Nuit à partir de <strong>68€</strong>
+              </p>
               <div class="hebergements_populaires_descriptions_texte_prix_star">
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star yes"> </i>
                 <i class="fas fa-star no"> </i>
+              </div>
             </div>
-            </div>
-          
           </div>
         </a>
       </aside>
     </div>
 
-    <!-- Activités -->
+    <!-- ACTIVITES -->
 
     <section id="activites" class="activites">
-      
+
       <header class="activites_header">
         <h2>Activités à Marseille</h2>
       </header>
 
       <div class="activites_list">
 
-
-      
         <div class="activite_figure_style1">
           <a href="#">
-          <img
-            class="figure_image"
-            src="images/activites/marseille_vieuxport.jpg"
-            alt="Le Vieux-Port de Marseille est l’un des symboles de la ville, situé en bas de la fameuse Canebière. Réservez cette activité dur Reservia."
-          />
-          <p class="activite_figure_description"><strong>Vieux Port</strong></p>
-        </a>
-        </div>
-     
-
-        <div class="activite_figure_style2">
-          <a href="#">
-          <img
-            class="figure_image"
-            src="images/activites/marseille_fortdepomegues.jpg"
-            alt="Erigé à la fin 19ème siècle le Fort de Pomègues domine le nord de l’île de Pomègues, à 87 mètres d’altitude. Il s’agit du point culminant de l’archipel du Frioul. Réservez cette activité sur Reservia"
-          />
-          <p class="activite_figure_description">
-            <strong>Fort de Pomègues</strong>
-          </p>
-        </a>
-        </div>
-
-        <div class="activite_figure_style3">
-          <a href="#">
-          <img
-            class="figure_image"
-            src="images/activites/marseille_iledufrioul.jpg"
-            alt="Dressé face à Marseille, l’archipel du Frioul est composé de quatre îles : Pomègues, Ratonneau, Tiboulen et If. Réservez cette activité sur Reservia"
-          />
-          <p class="activite_figure_description">
-            <strong>Îles du Frioul</strong>
-          </p>
-        </a>
-        </div>
-
-        <div class="activite_figure_style1">
-          <a href="#">
-          <img
-            class="figure_image"
-            src="images/activites/marseille_calanques.jpg"
-            alt="Le massif des Calanques est une merveille de la nature nichée entre Marseille et Cassis. Ce paysage exceptionnel et unique est un incontournable à Marseille ! Réservez cette acrivité sur Reservia"
-          />
-          <p class="activite_figure_description">
-            <strong>Parc National des Calanques</strong>
-          </p>
-        </a>
-        </div>
-
-        <div class="activite_figure_style3">
-          <a href="#">
-          <img
-            class="figure_image"
-            src="images/activites/marseille_notredamedelagarde.jpg"
-            alt="Figure emblématique de la Ville de Marseille, la basilique Notre-Dame de la Garde veille sur les marins, les pêcheurs et tous les Marseillais. Réservez cette activité sur Reservia"
-          />
-          <p class="activite_figure_description">
-            <strong>Notre-Dame de la Garde</strong>
-          </p>
-        </a>
+            <img
+              class="figure_image"
+              src="images/activites/marseille_vieuxport.jpg"
+              alt="Le Vieux-Port de Marseille est l’un des symboles de la ville, situé en bas de la fameuse Canebière. Réservez cette activité dur Reservia."
+            />
+            <p class="activite_figure_description">
+              <strong>Vieux Port</strong>
+            </p>
+          </a>
         </div>
 
         <div class="activite_figure_style2">
           <a href="#">
-          <img
-            class="figure_image"
-            src="images/activites/marseille_parclongchamp.jpg"
-            alt="Le Parc Longchamp est un parc majestueux situé en plein cœur de Marseille et ne laisse personne indifférent. Il est composé de huit d’hectares d’espaces verts, de musées d'une architecture somptueuse. Réservez cette activité sur Reservia"
-          />
-          <p class="activite_figure_description">
-            <strong>Parc Longchamp</strong>
-          </p>
-        </a>
+            <img
+              class="figure_image"
+              src="images/activites/marseille_fortdepomegues.jpg"
+              alt="Erigé à la fin 19ème siècle le Fort de Pomègues domine le nord de l’île de Pomègues, à 87 mètres d’altitude. Il s’agit du point culminant de l’archipel du Frioul. Réservez cette activité sur Reservia"
+            />
+            <p class="activite_figure_description">
+              <strong>Fort de Pomègues</strong>
+            </p>
+          </a>
+        </div>
+
+        <div class="activite_figure_style3">
+          <a href="#">
+            <img
+              class="figure_image"
+              src="images/activites/marseille_iledufrioul.jpg"
+              alt="Dressé face à Marseille, l’archipel du Frioul est composé de quatre îles : Pomègues, Ratonneau, Tiboulen et If. Réservez cette activité sur Reservia"
+            />
+            <p class="activite_figure_description">
+              <strong>Îles du Frioul</strong>
+            </p>
+          </a>
+        </div>
+
+        <div class="activite_figure_style1">
+          <a href="#">
+            <img
+              class="figure_image"
+              src="images/activites/marseille_calanques.jpg"
+              alt="Le massif des Calanques est une merveille de la nature nichée entre Marseille et Cassis. Ce paysage exceptionnel et unique est un incontournable à Marseille ! Réservez cette acrivité sur Reservia"
+            />
+            <p class="activite_figure_description">
+              <strong>Parc National des Calanques</strong>
+            </p>
+          </a>
+        </div>
+
+        <div class="activite_figure_style3">
+          <a href="#">
+            <img
+              class="figure_image"
+              src="images/activites/marseille_notredamedelagarde.jpg"
+              alt="Figure emblématique de la Ville de Marseille, la basilique Notre-Dame de la Garde veille sur les marins, les pêcheurs et tous les Marseillais. Réservez cette activité sur Reservia"
+            />
+            <p class="activite_figure_description">
+              <strong>Notre-Dame de la Garde</strong>
+            </p>
+          </a>
+        </div>
+
+        <div class="activite_figure_style2">
+          <a href="#">
+            <img
+              class="figure_image"
+              src="images/activites/marseille_parclongchamp.jpg"
+              alt="Le Parc Longchamp est un parc majestueux situé en plein cœur de Marseille et ne laisse personne indifférent. Il est composé de huit d’hectares d’espaces verts, de musées d'une architecture somptueuse. Réservez cette activité sur Reservia"
+            />
+            <p class="activite_figure_description">
+              <strong>Parc Longchamp</strong>
+            </p>
+          </a>
         </div>
 
       </div>
 
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
 
     <footer class="footer">
+
       <div>
         <ul>
-          <li><h3 class=footer_section_title>À propos</h3></li>
+          <li><h3 class="footer_section_title">À propos</h3></li>
           <li><a class="footer_link" href="#">Fonctionnement du site</a></li>
           <li><a class="footer_link" href="#">Conditions générales de vente</a></li>
           <li><a class="footer_link" href="#">Données et confidentialité</a></li>
@@ -430,7 +492,7 @@
 
       <div>
         <ul>
-          <li><h3 class=footer_section_title>Nos hébergements</h3></li>
+          <li><h3 class="footer_section_title">Nos hébergements</h3></li>
           <li><a class="footer_link" href="#">Charte qualité</a></li>
           <li><a class="footer_link" href="#">Soumettre votre hôtel</a></li>
         </ul>
@@ -438,11 +500,16 @@
 
       <div>
         <ul>
-          <li><h3 class=footer_section_title>Assistance</h3></li>
+          <li><h3 class="footer_section_title">Assistance</h3></li>
           <li><a class="footer_link" href="#">Centre d'aide</a></li>
           <li><a class="footer_link" href="#">Nous contacter</a></li>
         </ul>
       </div>
+
     </footer>
+
   </body>
+
+  <!-- BODY END-->
+  
 </html>
